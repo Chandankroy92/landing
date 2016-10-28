@@ -1,35 +1,88 @@
-#landingPage {
-  width: 100%;
-  height: 100vh;
+#landing {
   background-image: url("../images/parallax-bg.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
-  position: relative; }
-  #landingPage .navbar-default {
-    background-color: transparent;
-    border-color: transparent; }
-  #landingPage .navbar-nav li {
-    color: #fff;
-    text-decoration: none;
-    /* margin-top: 39px; */
-    /* letter-spacing: 1px; */
-    font-size: 17px; }
-  #landingPage .navbar-inverse .navbar-nav > .active > a, #landingPage .navbar-inverse .navbar-nav > .active > a:focus, #landingPage .navbar-inverse .navbar-nav > .active > a:hover {
-    color: #fff;
-    /*background-color: #080808;*/ }
-  #landingPage .navbar-default .navbar-nav > li > a {
-    color: #ffffff; }
-  #landingPage .navbar-default .navbar-brand {
-    color: #FFFFFF; }
-  #landingPage .heading {
-    color: #FFF;
-    letter-spacing: 5px;
-    font-size: 63px;
-    text-align: center;
+  background-position: 21%;
+  min-height: 92vh;
+  color: #fff;
+  position: relative;
+  padding-top: 25px; }
+  #landing .vh-center {
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 0;
-    right: 0; }
+    transform: translateY(-50%); }
+    #landing .vh-center h1 {
+      letter-spacing: 5px;
+      font-size: 63px;
+      margin-bottom: 15px; }
+    #landing .vh-center p {
+      font-size: 21px;
+      text-align: center;
+      margin-bottom: 45px;
+      letter-spacing: 1px;
+      font-family: 'Open Sans', sans-serif; }
+  #landing input {
+    border-radius: 0;
+    background-color: #dadada;
+    border-color: transparent;
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    color: #444;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif; }
+  #landing .btn-home {
+    padding: 21px 20px;
+    border-radius: 0px;
+    width: 45%;
+    display: inline-block;
+    font-size: 19px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; }
+  #landing .or-text {
+    position: relative;
+    left: 22px;
+    font-size: 19px;
+    font-weight: bold; }
+  #landing .green {
+    background-color: green;
+    color: white;
+    border-color: green; }
+  #landing .blue {
+    background-color: blue;
+    color: white;
+    border-color: blue; }
+  #landing .mar-20 {
+    margin-bottom: 35px; }
+
+@media only screen and (max-width: 768px) {
+  #landing {
+    min-height: 100vh;
+    padding-top: 0px;
+    /*display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;*/ }
+    #landing .btn-home {
+      letter-spacing: 1px; }
+    #landing .or-text {
+      display: none !important; }
+    #landing .enter-address {
+      margin-bottom: 20px; }
+    #landing .vh-center {
+      /*margin-top: 75px;*/
+      /*position: absolute;
+      top: 0%;*/
+      /*transform: translateY(0%);*/
+      vertical-align: middle; }
+      #landing .vh-center h1 {
+        font-size: 48px; }
+      #landing .vh-center p {
+        font-size: 18px; }
+      #landing .vh-center .btn-home {
+        font-size: 15px;
+        padding: 12px; } }
 
 /*# sourceMappingURL=landing.css.map */
